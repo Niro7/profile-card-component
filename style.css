@@ -1,0 +1,12 @@
+body{
+    /* position: relative; */
+    background: hsl(185, 75%, 39%);
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
