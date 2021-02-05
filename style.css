@@ -2,7 +2,8 @@
 body{
     /* position: relative; */
     font-family: 'Kumbh Sans', sans-serif;
-    background: hsl(185, 75%, 39%);
+    /* background: hsl(185, 75%, 39%); */
+    color: hsl(229, 23%, 23%);
 }
 main{
     height: 100vh;
@@ -12,3 +13,67 @@ main{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+.card{
+    background: #ffffff;
+    height: 375px;
+    width: 350px;
+    border-radius: 20px;
+    position: relative;
+}
+/* .card__header_bg{
+    overflow: hidden;
+} */
+.card__header{
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: 350px 140px;
+    height: 140px;
+    border-radius: 20px 20px 0 0;
+    border: none;
+}
+.card__body{
+    position: absolute;
+    width: 100%;
+    top: 217px;
+}
+.card__user_img{
+    border-radius: 50%;
+    border: 5px solid white;
+    display: block;
+    margin: auto;
+}
+.card__user_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card__user_stats{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid  hsl(0, 0%, 59%);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 26px 0;
+}
+.img__container{
+    position: absolute;
+    top: 87px;
+    width: 100%;
+}
+.user_stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user_stats span:first-child,.user__name{
+    font-size: 18px;
+    font-weight: bold;
+}
+.user__age{
+    color: hsl(227, 10%, 46%);
+}
+.user_stats span:nth-child(2){
+    font-size: 12px;
+    padding-top: 5px;
+}
