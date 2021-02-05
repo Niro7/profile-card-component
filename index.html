@@ -18,21 +18,28 @@
     <main>
       <div class="card">
         <header class="card__header">
-          <img src="images/image-victor.jpg" alt="" class="card__user_img" />
+          <!-- <img src="images/bg-pattern-card.svg" alt="" class="card__header_bg"> -->
+          <div class="img__container">
+            <img src="images/image-victor.jpg" alt="" class="card__user_img" />
+          </div>
+          
+        </header>
+        <section class="card__body">
           <div class="card__user_info">
-            <span class="user__name">Victor Crest</span>
-            <span class="user__age">26</span>
+            <span class="user__info"><span class="user__name">Victor Crest</span><span class="user__age">26</span></span>
+            
             <span class="user__city">London</span>
           </div>
-        </header>
-        <section>
-          <div class="followers"><span>80K</span><span>Followers</span></div>
-          <div class="likes"><span>803K</span><span>Likes</span></div>
-          <div class="photos"><span>1.4K</span><span>Photos</span></div>
+          
         </section>
+        <footer class="card__user_stats">
+          <div class="user_stats "><span>80K</span><span>Followers</span></div>
+        <div class="user_stats "><span>803K</span><span>Likes</span></div>
+        <div class="user_stats "><span>1.4K</span><span>Photos</span></div>
+        </footer>
       </div>
     </main>
-    <footer>
+    <footer id="footer">
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
