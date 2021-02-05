@@ -1,18 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 body{
-    /* position: relative; */
+    position: relative;
     font-family: 'Kumbh Sans', sans-serif;
-    /* background: hsl(185, 75%, 39%); */
+    background: hsl(185, 75%, 39%);
     color: hsl(229, 23%, 23%);
+    margin: 0;
 }
 main{
     height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; position: absolute; z-index: 1;    width: 100%;
+    bottom: 0; }
 .attribution a { color: hsl(228, 45%, 44%); }
+.bg-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+}
+.bg-left{
+    background-image: url(images/bg-pattern-bottom.svg);
+    width: 100vw;
+    height: 100%;
+    transform: rotate(141deg);
+    position: absolute;
+    bottom: 25%;
+    left: -41%;;
+}
+.bg-right{
+    background-image: url(images/bg-pattern-bottom.svg);
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    position: absolute;
+    left: 51%;
+}
 .card{
     background: #ffffff;
     height: 375px;
