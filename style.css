@@ -88,11 +88,11 @@ main {
 .card__user_stats {
   display: flex;
   justify-content: space-around;
-  border-top: 1px solid hsl(0, 0%, 59%);
+  border-top: 1px solid hsl(0deg 0% 59% / 51%);
   position: absolute;
   width: 100%;
   bottom: 0;
-  padding: 26px 0;
+  padding: 23px 0;
 }
 .img__container {
   position: absolute;
@@ -103,6 +103,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 7px;
 }
 .user_stats span:first-child,
 .user__name {
@@ -113,8 +114,11 @@ main {
   color: hsl(227, 10%, 46%);
   padding-left: 10px;
 }
-.user_stats span:nth-child(2) {
-  font-size: 12px;
+.user__city{
+  padding-top: 10px !important;
+}
+.user_stats span:nth-child(2),.user__city {
+  font-size: 11px;
   padding-top: 5px;
 }
 @media (max-width: 375px) {
